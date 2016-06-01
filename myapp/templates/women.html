@@ -1,0 +1,291 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block title %}
+    <title>Women</title>
+{% endblock %}
+
+{% block content %}
+<!-- content -->
+<div class="container">
+<div class="women_main">
+	<!-- start sidebar -->
+	<div class="col-md-3 s-d">
+	  <div class="w_sidebar">
+		<!-- <div class="w_nav1">
+			<h4 id="suoyouxiang">所有项</h4>
+			<ul>
+				<li><a href="women.html">品牌</a></li>
+				<li><a href="#">商场</a></li>
+				<li><a href="#">折扣</a></li>
+				<li><a href="#">SHOES</a></li>
+				<li><a href="#">GLASSES</a></li>
+				<li><a href="#">T-SHIRT</a></li>
+				<li><a href="#">WATCHES</a></li>
+			</ul>	
+		</div> -->
+		<div class="w_nav1">
+			<h4>筛选条件</h4>
+		</div>
+		<!--<section  class="sky-form">
+					<h4>类别</h4>
+						<div class="row1 scroll-pane">
+							<div class="col col-4">
+								<label class="checkbox"><input type="checkbox" name="area" checked=""><i></i>kurtas</label>
+							</div>
+							<div class="col col-4">
+								<label class="checkbox"><input type="checkbox" name="area"><i></i>kutis</label>
+								<label class="checkbox"><input type="checkbox" name="area"><i></i>churidar kurta</label>
+								<label class="checkbox"><input type="checkbox" name="area"><i></i>salwar</label>
+								<label class="checkbox"><input type="checkbox" name="area"><i></i>printed sari</label>
+								<label class="checkbox"><input type="checkbox" name="area" ><i></i>shree</label>
+								<label class="checkbox"><input type="checkbox" name="area"><i></i>Anouk</label>
+								<label class="checkbox"><input type="checkbox" name="area"><i></i>biba</label>
+								<label class="checkbox"><input type="checkbox" name="area"><i></i>fashion sari</label>
+								<label class="checkbox"><input type="checkbox" name="area"><i></i>fashion sari</label>
+								<label class="checkbox"><input type="checkbox" name="area"><i></i>fashion sari</label>
+								<label class="checkbox"><input type="checkbox" name="area"><i></i>fashion sari</label>
+								<label class="checkbox"><input type="checkbox" name="area"><i></i>fashion sari</label>
+								<label class="checkbox"><input type="checkbox" name="area"><i></i>fashion sari</label>
+								<label class="checkbox"><input type="checkbox" name="area"><i></i>fashion sari</label>
+								<label class="checkbox"><input type="checkbox" name="area"><i></i>fashion sari</label>	
+							</div>
+						</div>
+		</section>-->
+		<section class="sky-form">
+						<h4>折扣</h4>
+						<div class="row1 scroll-pane">
+							<!-- <div class="col col-4">
+								<label class="radio"><input type="radio" name="radio" checked=""><i></i>5 折以下</label>
+								<label class="radio"><input type="radio" name="radio"><i></i>9 折以上</label>
+								<label class="radio"><input type="radio" name="radio"><i></i>7 ~ 8 折</label>
+							</div> -->
+							<div class="col col-4">
+								<label class="radio"><input type="radio" name="radio" checked=" "><i></i><strong>全部折扣</strong></label>
+								<label class="radio"><input type="radio" name="radio"><i></i>8 折以下</label>
+								<label class="radio"><input type="radio" name="radio"><i></i>6 折以下</label>
+								<label class="radio"><input type="radio" name="radio"><i></i>4 折以下</label>
+								<label class="radio"><input type="radio" name="radio"><i></i>2 折以下</label>
+							</div>
+						</div>						
+		</section>
+		<section  class="sky-form">
+					<h4>品牌</h4>
+						<div class="row1 scroll-pane">
+							<div class="col col-4">
+								<label class="checkbox"><input type="checkbox" id="brand_all" checked=" "><i></i><strong>全部品牌</strong></label>
+								<label class="checkbox"><input type="checkbox" name="brand"><i></i>欧时力</label>
+								<label class="checkbox"><input type="checkbox" name="brand"><i></i>江南布衣</label>
+								<label class="checkbox"><input type="checkbox" name="brand"><i></i>自然元素</label>
+							</div>
+							<div class="col col-4">
+								<label class="checkbox"><input type="checkbox" name="brand"><i></i>Five Plus</label>
+								<label class="checkbox"><input type="checkbox" name="brand"><i></i>曼妮芬</label>
+								<label class="checkbox"><input type="checkbox" name="brand"><i></i>鄂尔多斯</label>
+								<label class="checkbox"><input type="checkbox" name="brand"><i></i>袋鼠</label>
+								<label class="checkbox"><input type="checkbox" name="brand"><i></i>普顿</label>
+								<label class="checkbox"><input type="checkbox" name="brand"><i></i>GAP</label>
+								<label class="checkbox"><input type="checkbox" name="brand"><i></i>佳伦士</label>
+								<label class="checkbox"><input type="checkbox" name="brand"><i></i>巴布豆</label>
+								<label class="checkbox"><input type="checkbox" name="brand"><i></i>安奈儿</label>
+								<label class="checkbox"><input type="checkbox" name="brand"><i></i>好孩子</label>
+								<label class="checkbox"><input type="checkbox" name="brand"><i></i>史努比</label>		
+								<label class="checkbox"><input type="checkbox" name="brand"><i></i>加菲猫</label>	
+								<label class="checkbox"><input type="checkbox" name="brand"><i></i>迪奥</label>	
+								<label class="checkbox"><input type="checkbox" name="brand"><i></i>诺贝达</label>	
+								<label class="checkbox"><input type="checkbox" name="brand"><i></i>习朗</label>	
+								<label class="checkbox"><input type="checkbox" name="brand"><i></i>罗西尼</label>	
+								<label class="checkbox"><input type="checkbox" name="brand"><i></i>纪梵希</label>	
+								<label class="checkbox"><input type="checkbox" name="brand"><i></i>屈臣氏</label>	
+								<label class="checkbox"><input type="checkbox" name="brand"><i></i>兰蔻</label>	
+								<label class="checkbox"><input type="checkbox" name="brand"><i></i>雅诗兰黛</label>
+								<label class="checkbox"><input type="checkbox" name="brand"><i></i>自然堂</label>
+								<label class="checkbox"><input type="checkbox" name="brand"><i></i>玉兰油</label>
+								<label class="checkbox"><input type="checkbox" name="brand"><i></i>百思图</label>
+								<label class="checkbox"><input type="checkbox" name="brand"><i></i>千百度</label>
+								<label class="checkbox"><input type="checkbox" name="brand"><i></i>卡曼尼</label>		
+								<label class="checkbox"><input type="checkbox" name="brand"><i></i>杰西卡</label>	
+								<label class="checkbox"><input type="checkbox" name="brand"><i></i>卓诗尼</label>					
+							</div>
+						</div>
+		</section>
+
+		<section  class="sky-form">
+					<h4>商区</h4>
+						<div class="row1 scroll-pane">
+							<div class="col col-4">
+								<label class="checkbox"><input type="checkbox" id="area_all" checked=" "><i></i><strong>全部商区</strong></label>
+								<label class="checkbox"><input type="checkbox" name="area"><i></i>朝阳区</label>
+								<label class="checkbox"><input type="checkbox" name="area"><i></i>海淀区</label>
+								<label class="checkbox"><input type="checkbox" name="area"><i></i>西城区</label>
+								<label class="checkbox"><input type="checkbox" name="area"><i></i>东城区</label>
+								<label class="checkbox"><input type="checkbox" name="area"><i></i>丰台区</label>
+								<label class="checkbox"><input type="checkbox" name="area"><i></i>昌平区</label>			
+							</div>
+						</div>
+		</section>
+
+		<!-- <section class="sky-form">
+			<h4>颜色</h4>
+			<ul class="w_nav2">
+				<li><a class="color1" href="#"></a></li>
+				<li><a class="color2" href="#"></a></li>
+				<li><a class="color3" href="#"></a></li>
+				<li><a class="color4" href="#"></a></li>
+				<li><a class="color5" href="#"></a></li>
+				<li><a class="color6" href="#"></a></li>
+				<li><a class="color7" href="#"></a></li>
+				<li><a class="color8" href="#"></a></li>
+				<li><a class="color9" href="#"></a></li>
+				<li><a class="color10" href="#"></a></li>
+				<li><a class="color12" href="#"></a></li>
+				<li><a class="color13" href="#"></a></li>
+				<li><a class="color14" href="#"></a></li>
+				<li><a class="color15" href="#"></a></li>
+				<li><a class="color5" href="#"></a></li>
+				<li><a class="color6" href="#"></a></li>
+				<li><a class="color7" href="#"></a></li>
+				<li><a class="color8" href="#"></a></li>
+				<li><a class="color9" href="#"></a></li>
+				<li><a class="color10" href="#"></a></li>
+			</ul>
+		</section> -->
+		
+	</div>
+   </div>
+	<!-- start content -->
+	<div class="col-md-9 w_content" id='photo_list'>
+		<!-- <div class="women">
+			<a href="#"><h4>Enthecwear - <span>4449 itemms</span> </h4></a>
+			<ul class="w_nav">
+						<li>Sort : </li>
+		     			<li><a class="active" href="#">popular</a></li> |
+		     			<li><a href="#">new </a></li> |
+		     			<li><a href="#">discount</a></li> |
+		     			<li><a href="#">price: Low High </a></li> 
+		     			<div class="clear"></div>	
+		     </ul>
+		     <div class="clearfix"></div>	
+		</div> -->
+		
+	<!-- 	<div class="grids_of_4">
+		 <div class="grid1_of_4">
+				<div class="content_box"><a href="details.html">
+			   	   	 <img src="images/ds.jpg" class="img-responsive" alt=""/>
+				   	  </a>
+				    <h4><a href="details.html"> 袋鼠</a></h4>
+				     <p4>9 折</p4>
+					 <div class="grid_1 simpleCart_shelfItem">
+				    
+					 <div class="item_add"><span class="item_price"><h6>东方新天地</h6></span></div>
+					<div class="item_add"><span class="item_price"><a href="#">收藏</a></span></div>
+					 </div>
+			   	</div>
+			</div>
+			<div class="grid1_of_4">
+				<div class="content_box"><a href="details.html">
+			   	   	 <img src="images/eeds.jpg" class="img-responsive" alt=""/>
+				   	  </a>
+				    <h4><a href="details.html"> 鄂尔多斯</a></h4>
+				     <p4>8 折</p4>
+					 <div class="grid_1 simpleCart_shelfItem">
+				    
+					 <div class="item_add"><span class="item_price"><h6>西单商场</h6></span></div>
+					<div class="item_add"><span class="item_price"><a href="#">收藏</a></span></div>
+					 </div>
+			   	</div>
+			</div>
+			<div class="grid1_of_4">
+				<div class="content_box"><a href="details.html">
+			   	   	 <img src="images/bbd.jpg" class="img-responsive" alt=""/>
+				   	  </a>
+				    <h4><a href="details.html"> 巴布豆</a></h4>
+				     <p4>6 折</p4>
+					 <div class="grid_1 simpleCart_shelfItem">
+				    
+					 <div class="item_add"><span class="item_price"><h6>华联商厦</h6></span></div>
+					<div class="item_add"><span class="item_price"><a href="#">收藏</a></span></div>
+					 </div>
+			   	</div>
+			</div>
+			<div class="grid1_of_4">
+				<div class="content_box"><a href="details.html">
+			   	   	 <img src="images/lxn.jpg" class="img-responsive" alt=""/>
+				   	  </a>
+				    <h4><a href="details.html"> 罗西尼</a></h4>
+				     <p4>7 折</p4>
+					 <div class="grid_1 simpleCart_shelfItem">
+				    
+					 <div class="item_add"><span class="item_price"><h6>西单商场</h6></span></div>
+					<div class="item_add"><span class="item_price"><a href="#">收藏</a></span></div>
+					 </div>
+			   	</div>
+			</div>
+			<div class="clearfix"></div>
+		</div> -->
+
+		<!-- <div class="grids_of_4">
+		  <div class="grid1_of_4">
+				<div class="content_box"><a href="details.html">
+			   	   	 <img src="images/qcs.jpg" class="img-responsive" alt=""/>
+				   	  </a>
+				    <h4><a href="details.html"> 屈臣氏</a></h4>
+				     <p4>9 折</p4>
+					 <div class="grid_1 simpleCart_shelfItem">
+				    
+					 <div class="item_add"><span class="item_price"><h6>万庄购物中心</h6></span></div>
+					<div class="item_add"><span class="item_price"><a href="#">收藏</a></span></div>
+					 </div>
+			   	</div>
+			</div>
+			<div class="grid1_of_4">
+				<div class="content_box"><a href="details.html">
+			   	   	 <img src="images/bst.jpg" class="img-responsive" alt=""/>
+				   	  </a>
+				    <h4><a href="details.html"> 百思图</a></h4>
+				     <p4>9.5 折</p4>
+					 <div class="grid_1 simpleCart_shelfItem">
+				    
+					 <div class="item_add"><span class="item_price"><h6>汉光百货</h6></span></div>
+					<div class="item_add"><span class="item_price"><a href="#">收藏</a></span></div>
+					 </div>
+			   	</div>
+			</div>
+			<div class="grid1_of_4">
+				<div class="content_box"><a href="details.html">
+			   	   	 <img src="images/da.jpg" class="img-responsive" alt=""/>
+				   	  </a>
+				    <h4><a href="details.html"> 迪奥</a></h4>
+				     <p4>8.5 折</p4>
+					 <div class="grid_1 simpleCart_shelfItem">
+				    
+					 <div class="item_add"><span class="item_price"><h6>东方新天地</h6></span></div>
+					<div class="item_add"><span class="item_price"><a href="#">收藏</a></span></div>
+					 </div>
+			   	</div>
+			</div>
+			<div class="grid1_of_4">
+				<div class="content_box"><a href="details.html">
+			   	   	 <img src="images/qbd.jpg" class="img-responsive" alt=""/>
+				   	  </a>
+				    <h4><a href="details.html"> 千百度</a></h4>
+				     <p4>6.5 折</p4>
+					 <div class="grid_1 simpleCart_shelfItem">
+				    
+					 <div class="item_add"><span class="item_price"><h6>龙德广场</h6></span></div>
+					<div class="item_add"><span class="item_price"><a href="#">收藏</a></span></div>
+					 </div>
+			   	</div>
+			</div>
+			<div class="clearfix"></div>
+		</div> -->
+		<!-- end grids_of_4 -->
+		
+		
+	</div>
+	<div class="clearfix"></div>
+	
+	<!-- end content -->
+</div>
+</div>
+{% endblock %}

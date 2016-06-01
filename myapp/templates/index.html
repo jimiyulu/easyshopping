@@ -1,0 +1,104 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block title %}
+    <title>Home</title>
+
+{% endblock %}
+
+{% block content %}
+<script>
+    localStorage["hosturl"] = window.location.href;
+</script>
+<div class="arriv" id='div_hide'>
+    <div class="container">
+        <div class="arriv-bottm">
+            <div class="col-md-8 arriv-left1">
+                <img src="{% static 'images/slt4.jpg' %}" class="img-responsive" alt="">
+                <div class="arriv-info1">
+                    <h3>三里屯太古里</h3>
+                    <div class="crt-btn">
+                        <a href="details.html">SHOP NOW</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 arriv-right1">
+                <img src="{% static 'images/joy4.jpg' %}" class="img-responsive" alt="">
+                <div class="arriv-info2">
+                    <a href="details.html"><h3>西单大悦城<i class="ars"></i></h3></a>
+                </div>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+        <div class="arriv-las">
+            <div class="col-md-4 arriv-left2">
+                <img src="{% static 'images/hg7.jpg' %}" class="img-responsive" alt="">
+                <div class="arriv-info2">
+                    <a href="details.html"><h3>汉光百货<i class="ars"></i></h3></a>
+                </div>
+            </div>
+            <div class="col-md-4 arriv-middle">
+                <img src="{% static 'images/skp2.jpg' %}" class="img-responsive" alt="">
+                <div class="arriv-info3">
+                    <h3>北京SKP</h3>
+                    <div class="crt-btn">
+                        <a href="details.html">SHOP NOW</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 arriv-right2">
+                <img src="{% static 'images/银座mall3.jpg' %}" class="img-responsive" alt="">
+                <div class="arriv-info2">
+                    <a href="details.html"><h3>北京银座MALL<i class="ars"></i></h3></a>
+                </div>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+    </div>
+</div>
+<div class="special">
+    <div class="container">
+        <h3>Special Offers</h3>
+        <div class="specia-top">
+            <ul class="grid_2">
+                <li>
+                    <a href="details.html"><img src="{% static 'images/snidel3.jpg' %}" class="img-responsive" alt=""></a>
+                    <div class="special-info grid_1 simpleCart_shelfItem">
+                        <h5><strong>Snidel 5th ANNIVERSARY FAIR</strong></h5>
+                        <div class="item_add"><span class="item_price">
+				  <h6>ONLY 4.26~5.2 10~20% OFF</h6></span></div>
+                        <div class="item_add"><span class="item_price"><a href="#">收 藏</a></span></div>
+                    </div>
+                </li>
+                <li>
+                    <a href="details.html"><img src={% static 'images/earth3.jpg' %} class="img-responsive" alt=""></a>
+                    <div class="special-info grid_1 simpleCart_shelfItem">
+                        <h5><strong>Earth Music&amp;Ecology五一庆</strong></h5>
+                        <div class="item_add"><span class="item_price">
+					<h6>ONLY 4.22~5.5 10~50% OFF</h6></span></div>
+                        <div class="item_add"><span class="item_price"><a href="#">收 藏</a></span></div>
+                    </div>
+                </li>
+                <li>
+                    <a href="details.html"><img src="{% static 'images/hm2.jpg' %}" class="img-responsive" alt=""></a>
+                    <div class="special-info grid_1 simpleCart_shelfItem">
+                        <h5><strong><span lang="en" xml:lang="en">H&amp;M</span></strong>(<strong><span lang="sv" xml:lang="sv">Hennes &amp; Mauritz AB)</span></strong></h5>
+                        <div class="item_add"><span class="item_price">
+				  <h6>ONLY 5.1~8.1 25% OFF</h6></span></div>
+                        <div class="item_add"><span class="item_price"><a href="#">收 藏</a></span></div>
+                    </div>
+                </li>
+                <li>
+                    <a href="details.html"><img src="{% static 'images/uniqlo3.jpg' %}" class="img-responsive" alt=""></a>
+                    <div class="special-info grid_1 simpleCart_shelfItem">
+                        <h5><strong>UNIQLO 春季特辑</strong></h5>
+                        <div class="item_add"><span class="item_price">
+				  <h6>ONLY 4.29~5.5 限时特优</h6></span></div>
+                        <div class="item_add"><span class="item_price"><a href="#">收 藏</a></span></div>
+                    </div>
+                </li>
+                <div class="clearfix"> </div>
+            </ul>
+        </div>
+    </div>
+</div>
+{% endblock %}

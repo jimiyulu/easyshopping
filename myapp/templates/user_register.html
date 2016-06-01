@@ -1,0 +1,114 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block title %}
+    <title>Register</title>
+{% endblock %}
+
+{% block content %}
+    <!-- content -->
+    <div class="container">
+        <div class="main">
+            <!-- start registration -->
+            <div class="registration">
+                <div class="registration_left">
+                    <h2>新用户? <span> 创建账号 </span></h2>
+{#                    <script>#}
+{#                        (function() {#}
+{##}
+{#                            // Create input element for testing#}
+{#                            var inputs = document.createElement('input');#}
+{##}
+{#                            // Create the supports object#}
+{#                            var supports = {};#}
+{##}
+{#                            supports.autofocus   = 'autofocus' in inputs;#}
+{#                            supports.required    = 'required' in inputs;#}
+{#                            supports.placeholder = 'placeholder' in inputs;#}
+{##}
+{#                            // Fallback for autofocus attribute#}
+{#                            if(!supports.autofocus) {#}
+{##}
+{#                            }#}
+{##}
+{#                            // Fallback for required attribute#}
+{#                            if(!supports.required) {#}
+{##}
+{#                            }#}
+{##}
+{#                            // Fallback for placeholder attribute#}
+{#                            if(!supports.placeholder) {#}
+{##}
+{#                            }#}
+{##}
+{#                            // Change text inside send button on submit#}
+{#                            var send = document.getElementById('register-submit');#}
+{#                            if(send) {#}
+{#                                send.onclick = function () {#}
+{#                                    this.innerHTML = '...Sending';#}
+{#                                }#}
+{#                            }#}
+{##}
+{#                        })();#}
+{#                    </script>#}
+                    <div class="registration_form">
+                        <!-- Form -->
+                        <form id="registration_form" method="post" class="post-form">
+                            {% csrf_token %}
+                            {{ form.as_p }}
+                            <div>
+                                <label>
+                                    <input name="user_id" placeholder="账户(手机号)" type="tel" tabindex="1" required autofocus>
+                                </label>
+                            </div>
+                            <div>
+                                <label>
+                                    <input name="user_name" placeholder="账户名" type="text" tabindex="2" required>
+                                </label>
+                            </div>
+                            <div>
+                                <label>
+                                    <input name="user_password" placeholder="密码" type="password" tabindex="3" required>
+                                </label>
+                            </div>
+                            <div>
+                                <input type="submit" value="创建账号" id="register-submit">
+                            </div>
+{#                            <div class="sky-form">#}
+{#                                <label class="checkbox"><input type="checkbox" name="checkbox" ><i></i>我同意北京实体优惠网的相关协议;<a class="terms" href="#"> 用户协议</a> </label>#}
+{#                            </div>#}
+                        </form>
+                        <!-- /Form -->
+                    </div>
+                </div>
+{#                <div class="registration_left">#}
+{#                    <h2>已有账号？ 登录</h2>#}
+{#                    <div class="registration_form">#}
+{#                        <!-- Form -->#}
+{#                        <form id="registration_form" action="contact.php" method="post">#}
+{#                            <div>#}
+{#                                <label>#}
+{#                                    <input placeholder="账户" type="tel" tabindex="3" required>#}
+{#                                </label>#}
+{#                            </div>#}
+{#                            <div>#}
+{#                                <label>#}
+{#                                    <input placeholder="密码" type="password" tabindex="4" required>#}
+{#                                </label>#}
+{#                            </div>#}
+{#                            <div>#}
+{#                                <input type="submit" value="登录" id="register-submit">#}
+{#                            </div>#}
+{#                            <div class="forget">#}
+{#                                <a href="#">忘记密码</a>#}
+{#                            </div>#}
+{#                        </form>#}
+{#                        <!-- /Form -->#}
+{#                    </div>#}
+{#                </div>#}
+                <div class="clearfix"></div>
+            </div>
+            <!-- end registration -->
+        </div>
+    </div>
+{% endblock %}
